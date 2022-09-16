@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 2 Exercises</title>
+    <meta charset="UTF-8" />
+    <script src="src/index.js" dafer></script>
+  </head>
+
+  <body>
+    <h1>New user</h1>
+    <fieldset>
+      <legend>Information:</legend>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="input-username"
+        id="input-username"
+        placeholder="Username"
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        name="input-email"
+        id="input-email"
+        placeholder="Email"
+      />
+      <br />
+      <label for="address">Address:</label>
+      <input
+        type="text"
+        name="-input-address"
+        id="input-address"
+        placeholder="Address"
+      />
+      <br />
+      <label for="Checkbox">Admin user:</label>
+      <input type="Checkbox" name="input-admin" id="input-admin" />
+      <br />
+      <label for="file">Add profile picture:</label>
+      <input
+        type="file"
+        name="input-image"
+        id="input-image"
+        accept="image/jpg, image/png"
+        style="width: 64px; height: 64px;"
+      />
+      <br />
+      <button id="submit-data">Submit</button>
+    </fieldset>
+    <h2>Exsisting users</h2>
+    <table id="input-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Admin</th>
+        </tr>
+      </thead>
+      <tbody id="input-tbody">
+        <tr>
+          <td>RoopeN</td>
+          <td>roope@lut.fi</td>
+          <td>Skinnarila</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>PekkaP</td>
+          <td>pekka@lut.fi</td>
+          <td>Sammonlahti</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>JaakkoK</td>
+          <td>jaakko@lut.fi</td>
+          <td>Pallo</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="empty-table">Remove all</button>
+  </body>
+</html>
